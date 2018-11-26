@@ -27,9 +27,9 @@ export default class DistrictRepository {
     if (!name) { return undefined }
 
     const districtKeys = Object.keys(this.stats)
-    const searchedDistrict = districtKeys.find(district => {
-      return district.toUpperCase() === name.toUpperCase()
-    })
+    const searchedDistrict = districtKeys.find(district => (
+      district.toUpperCase() === name.toUpperCase()
+    ))
     
     if (searchedDistrict) {
       return this.stats[searchedDistrict]
@@ -43,7 +43,7 @@ export default class DistrictRepository {
     return districtKeys.reduce((results, district) => {
       if (!search || this.stats[district].location.toLowerCase().
         includes(search.toLowerCase())) {
-        results.push(this.stats[district])
+        results = [...results,this.stats[district]]
       }
       return results
     }, [])
