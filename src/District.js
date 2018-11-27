@@ -1,5 +1,6 @@
 import React from 'react'
 import './District.css'
+import PropTypes from 'prop-types'
 const uuidv4 = require('uuid/v4')
 
 export default function District({ districtData }) {
@@ -18,4 +19,8 @@ export default function District({ districtData }) {
       <ul>{statsArray}</ul>
     </div>
   )
+}
+
+District.propTypes = {
+  districtData: PropTypes.object
 }

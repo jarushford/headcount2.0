@@ -1,6 +1,7 @@
 import React from 'react'
 import District from './District'
 import './DistrictContainer.css'
+import PropTypes from 'prop-types'
 const uuidv4 = require('uuid/v4')
 
 export default function DistrictContainer({ districts }) {
@@ -14,4 +15,8 @@ export default function DistrictContainer({ districts }) {
       { districtArray }
     </div>
   )
+}
+
+DistrictContainer.propTypes = {
+  districts: PropTypes.objectOf(PropTypes.object)
 }
