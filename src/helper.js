@@ -41,8 +41,9 @@ export default class DistrictRepository {
   findAllMatches(search) {
     const districtKeys = Object.keys(this.stats)
     return districtKeys.reduce((results, district) => {
-      if (!search || this.stats[district].location.toLowerCase().
-        includes(search.toLowerCase())) {
+      if (!search || 
+        this.stats[district].location.toLowerCase()
+          .includes(search.toLowerCase())) {
         results = [...results,this.stats[district]]
       }
       return results
