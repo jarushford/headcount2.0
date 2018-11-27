@@ -1,5 +1,6 @@
 import React from 'react'
 import District from './District'
+import './DistrictContainer.css'
 const uuidv4 = require('uuid/v4')
 
 export default function DistrictContainer({ districts }) {
@@ -9,7 +10,7 @@ export default function DistrictContainer({ districts }) {
   })
 
   return (
-    <div>
+    <div className='district-container'>
       { districtArray }
     </div>
   )

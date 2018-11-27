@@ -1,4 +1,5 @@
 import React from 'react'
+import './District.css'
 const uuidv4 = require('uuid/v4')
 
 export default function District({ districtData }) {
@@ -11,8 +12,9 @@ export default function District({ districtData }) {
   })
 
   return (
-    <div>
+    <div className='district-card' >
       <h2>{location}</h2>
+      <hr/>
       <ul>{statsArray}</ul>
     </div>
   )
