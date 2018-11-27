@@ -2924,6 +2924,7 @@ ShallowWrapper {
           }
 />,
       ],
+      "className": "App",
     },
     "ref": null,
     "rendered": Array [
@@ -8762,6 +8763,7 @@ ShallowWrapper {
             }
 />,
         ],
+        "className": "App",
       },
       "ref": null,
       "rendered": Array [

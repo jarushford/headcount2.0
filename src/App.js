@@ -21,7 +21,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <h1>Headcount 2.0</h1>
         <DistrictContainer districts={this.state.districts}/>
       </div>

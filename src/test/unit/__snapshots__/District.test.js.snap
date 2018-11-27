@@ -34,8 +34,28 @@ ShallowWrapper {
         <ul>
           <li>
                     2006
-                    : 
-                    0
+                    <svg
+                              height="30"
+                              width="150"
+                    >
+                              <line
+                                        className="line-bg"
+                                        x1={0}
+                                        x2="145"
+                                        y1="0"
+                                        y2="0"
+                              />
+                              <line
+                                        className="line-accent red-accent"
+                                        x1="0"
+                                        x2={0}
+                                        y1="0"
+                                        y2="0"
+                              />
+                    </svg>
+                    <span
+                              className="data-span"
+                    />
           </li>
 </ul>,
       ],
@@ -71,8 +91,28 @@ ShallowWrapper {
           "children": Array [
             <li>
               2006
-              : 
-              0
+              <svg
+                            height="30"
+                            width="150"
+              >
+                            <line
+                                          className="line-bg"
+                                          x1={0}
+                                          x2="145"
+                                          y1="0"
+                                          y2="0"
+                            />
+                            <line
+                                          className="line-accent red-accent"
+                                          x1="0"
+                                          x2={0}
+                                          y1="0"
+                                          y2="0"
+                            />
+              </svg>
+              <span
+                            className="data-span"
+              />
 </li>,
           ],
         },
@@ -80,20 +120,109 @@ ShallowWrapper {
         "rendered": Array [
           Object {
             "instance": null,
-            "key": "5d19d626-1e3c-420b-ae57-2d8e29f963e2",
+            "key": "val-2006",
             "nodeType": "host",
             "props": Object {
               "children": Array [
                 "2006",
-                ": ",
-                0,
+                <svg
+                  height="30"
+                  width="150"
+>
+                  <line
+                                    className="line-bg"
+                                    x1={0}
+                                    x2="145"
+                                    y1="0"
+                                    y2="0"
+                  />
+                  <line
+                                    className="line-accent red-accent"
+                                    x1="0"
+                                    x2={0}
+                                    y1="0"
+                                    y2="0"
+                  />
+</svg>,
+                <span
+                  className="data-span"
+/>,
               ],
             },
             "ref": null,
             "rendered": Array [
               "2006",
-              ": ",
-              0,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <line
+                      className="line-bg"
+                      x1={0}
+                      x2="145"
+                      y1="0"
+                      y2="0"
+/>,
+                    <line
+                      className="line-accent red-accent"
+                      x1="0"
+                      x2={0}
+                      y1="0"
+                      y2="0"
+/>,
+                  ],
+                  "height": "30",
+                  "width": "150",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "line-bg",
+                      "x1": 0,
+                      "x2": "145",
+                      "y1": "0",
+                      "y2": "0",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "line",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "line-accent red-accent",
+                      "x1": "0",
+                      "x2": 0,
+                      "y1": "0",
+                      "y2": "0",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "line",
+                  },
+                ],
+                "type": "svg",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "data-span",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "span",
+              },
             ],
             "type": "li",
           },
@@ -117,8 +246,28 @@ ShallowWrapper {
           <ul>
             <li>
                         2006
-                        : 
-                        0
+                        <svg
+                                    height="30"
+                                    width="150"
+                        >
+                                    <line
+                                                className="line-bg"
+                                                x1={0}
+                                                x2="145"
+                                                y1="0"
+                                                y2="0"
+                                    />
+                                    <line
+                                                className="line-accent red-accent"
+                                                x1="0"
+                                                x2={0}
+                                                y1="0"
+                                                y2="0"
+                                    />
+                        </svg>
+                        <span
+                                    className="data-span"
+                        />
             </li>
 </ul>,
         ],
@@ -154,8 +303,28 @@ ShallowWrapper {
             "children": Array [
               <li>
                 2006
-                : 
-                0
+                <svg
+                                height="30"
+                                width="150"
+                >
+                                <line
+                                                className="line-bg"
+                                                x1={0}
+                                                x2="145"
+                                                y1="0"
+                                                y2="0"
+                                />
+                                <line
+                                                className="line-accent red-accent"
+                                                x1="0"
+                                                x2={0}
+                                                y1="0"
+                                                y2="0"
+                                />
+                </svg>
+                <span
+                                className="data-span"
+                />
 </li>,
             ],
           },
@@ -163,20 +332,109 @@ ShallowWrapper {
           "rendered": Array [
             Object {
               "instance": null,
-              "key": "5d19d626-1e3c-420b-ae57-2d8e29f963e2",
+              "key": "val-2006",
               "nodeType": "host",
               "props": Object {
                 "children": Array [
                   "2006",
-                  ": ",
-                  0,
+                  <svg
+                    height="30"
+                    width="150"
+>
+                    <line
+                                        className="line-bg"
+                                        x1={0}
+                                        x2="145"
+                                        y1="0"
+                                        y2="0"
+                    />
+                    <line
+                                        className="line-accent red-accent"
+                                        x1="0"
+                                        x2={0}
+                                        y1="0"
+                                        y2="0"
+                    />
+</svg>,
+                  <span
+                    className="data-span"
+/>,
                 ],
               },
               "ref": null,
               "rendered": Array [
                 "2006",
-                ": ",
-                0,
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <line
+                        className="line-bg"
+                        x1={0}
+                        x2="145"
+                        y1="0"
+                        y2="0"
+/>,
+                      <line
+                        className="line-accent red-accent"
+                        x1="0"
+                        x2={0}
+                        y1="0"
+                        y2="0"
+/>,
+                    ],
+                    "height": "30",
+                    "width": "150",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "line-bg",
+                        "x1": 0,
+                        "x2": "145",
+                        "y1": "0",
+                        "y2": "0",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "line",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "line-accent red-accent",
+                        "x1": "0",
+                        "x2": 0,
+                        "y1": "0",
+                        "y2": "0",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "line",
+                    },
+                  ],
+                  "type": "svg",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                    "className": "data-span",
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "span",
+                },
               ],
               "type": "li",
             },

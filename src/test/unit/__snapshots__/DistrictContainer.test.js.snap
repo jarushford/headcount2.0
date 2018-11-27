@@ -46,7 +46,7 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "70139255-1ec3-438c-a7d2-aff69e53bd20",
+        "key": "val-Colorado",
         "nodeType": "function",
         "props": Object {
           "districtData": Object {
@@ -87,7 +87,7 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "70139255-1ec3-438c-a7d2-aff69e53bd20",
+          "key": "val-Colorado",
           "nodeType": "function",
           "props": Object {
             "districtData": Object {
