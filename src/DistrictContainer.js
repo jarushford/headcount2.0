@@ -1,6 +1,6 @@
 import React from 'react'
 import District from './District'
-import './DistrictContainer.css'
+import './styles/DistrictContainer.css'
 import PropTypes from 'prop-types'
 import  { uid } from 'react-uid'
 

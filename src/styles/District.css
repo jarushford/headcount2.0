@@ -22,8 +22,9 @@ ul {
 }
 
 li {
+  font-family: monospace;
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   width: 100%;
   display: flex;
   justify-content: flex-start;

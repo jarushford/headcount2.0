@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: 'Chalk';
-  src: url('chalk-font/KGSecondChancesSolid.ttf') format('truetype');
+  src: url('../chalk-font/KGSecondChancesSolid.ttf') format('truetype');
 }
 
 .App {

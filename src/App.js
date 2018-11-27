@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import DistrictContainer from './DistrictContainer'
 import DistrictRepository from './helper'
 import kinderData from './data/kindergartners_in_full_day_program'
-import './App.css'
+import './styles/App.css'
 
 class App extends Component {
   constructor() {
