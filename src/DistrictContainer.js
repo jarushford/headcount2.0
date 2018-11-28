@@ -4,8 +4,11 @@ import './styles/DistrictContainer.css'
 import PropTypes from 'prop-types'
 import  { uid } from 'react-uid'
 
-export default function DistrictContainer({ districts }) {
-  const districtKeys = Object.keys(districts)
+export default function DistrictContainer({ districts, showAll }) {
+  let districtKeys = Object.keys(districts)
+  if (!showAll) {
+    districtKeys = districtKeys.splice(0, 12);
+  }
   const districtArray = districtKeys.map(district => {
     return <District districtData={districts[district]} key={uid(district)} />
   })

@@ -1,21 +1,36 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import DistrictContainer from './DistrictContainer'
 import DistrictRepository from './helper'
+import SearchForm from './SearchForm'
 import kinderData from './data/kindergartners_in_full_day_program'
 import './styles/App.css'
 
 class App extends Component {
   constructor() {
     super()
+    this.districtRepository = new DistrictRepository(kinderData);
     this.state = {
-      districts: { Colorado: { location: 'Colorado', stats: { 2006: 0 } } }
+      districts: { Colorado: { location: 'Colorado', stats: { 2006: 0 } } },
+      showAll: false,
+      searchInput: ''
     }
   }
-
+  
   componentDidMount() {
-    const districtRepository = new DistrictRepository(kinderData);
     this.setState({
-      districts: districtRepository.stats
+      districts: this.districtRepository.stats
+    })
+  }
+
+  handleInputUpdate = (value) => {
+    this.setState({
+      searchInput: value
+    })
+  }
+
+  toggleShowAll = () => {
+    this.setState({
+      showAll: !this.state.showAll
     })
   }
 
@@ -23,7 +38,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Headcount 2.0</h1>
-        <DistrictContainer districts={this.state.districts}/>
+        <SearchForm handleInputUpdate={this.handleInputUpdate}
+          toggleShowAll={this.toggleShowAll}/>
+        <DistrictContainer districts={this.state.districts}
+          showAll={this.state.showAll}/>
       </div>
     );
   }
