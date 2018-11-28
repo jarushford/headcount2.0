@@ -10,21 +10,20 @@ class App extends Component {
     super()
     this.districtRepository = new DistrictRepository(kinderData);
     this.state = {
-      districts: { Colorado: { location: 'Colorado', stats: { 2006: 0 } } },
-      showAll: false,
-      searchInput: ''
+      districts: [ { location: '', stats: { 2006: 0 } } ],
+      showAll: false
     }
   }
   
   componentDidMount() {
     this.setState({
-      districts: this.districtRepository.stats
+      districts: this.districtRepository.findAllMatches(this.state.searchInput)
     })
   }
 
-  handleInputUpdate = (value) => {
+  handleInputUpdate = (e) => {
     this.setState({
-      searchInput: value
+      districts: this.districtRepository.findAllMatches(e.target.value)
     })
   }
 
@@ -35,13 +34,18 @@ class App extends Component {
   }
 
   render() {
+    const { districts, showAll } = this.state
     return (
       <div className="App">
         <h1>Headcount 2.0</h1>
-        <SearchForm handleInputUpdate={this.handleInputUpdate}
-          toggleShowAll={this.toggleShowAll}/>
-        <DistrictContainer districts={this.state.districts}
-          showAll={this.state.showAll}/>
+        <SearchForm 
+          handleInputUpdate={this.handleInputUpdate}
+          toggleShowAll={this.toggleShowAll}
+        />
+        <DistrictContainer 
+          districts={districts}
+          showAll={showAll}
+        />
       </div>
     );
   }

@@ -5,6 +5,10 @@
   src: url('../chalk-font/KGSecondChancesSolid.ttf') format('truetype');
 }
 
+body {
+  background: #24502f;
+}
+
 .App {
   background: #24502f;
 }

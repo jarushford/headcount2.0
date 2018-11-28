@@ -1,7 +1,7 @@
 .district-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 25px;
   margin: 40px 40px 0 40px;
   padding-bottom: 50px;
 }
