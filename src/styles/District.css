@@ -7,14 +7,15 @@
 }
 
 hr {
-  width: 75%;
+  width: 85%;
 }
 
 h2 {
   font-family: 'Chalk';
   font-size: 16px;
   letter-spacing: 2px;
-  text-align: center;
+  text-align: left;
+  margin-left: 8%;
 }
 
 ul {
