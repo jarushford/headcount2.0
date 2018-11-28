@@ -17,4 +17,13 @@ describe('Search Form', () => {
     expect(showAllMock).toBeCalled()
   })
 
+  it('should change button text when clicked', () => {
+    const showAllMock = jest.fn()
+    const wrapper = mount (<SearchForm toggleShowAll={showAllMock} />)
+    wrapper.find('.show-all').simulate('click')
+    expect(wrapper.find('.show-all').instance().innerText).toEqual('Show All')
+    wrapper.find('.show-all').simulate('click')
+    expect(wrapper.find('.show-all').instance().innerText).toEqual('Show Less')
+  })
+
 })
