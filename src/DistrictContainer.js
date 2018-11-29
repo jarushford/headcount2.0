@@ -7,7 +7,6 @@ import  { uid } from 'react-uid'
 export default function DistrictContainer({ districts, showAll, compareDistrict }) {
   if (!showAll) { districts = districts.slice().splice(0, 12) }
   const districtArray = districts.map(district => {
-    console.log(district)
     return <District districtData={district} key={uid(district)}
       compareDistrict={compareDistrict} />
   })

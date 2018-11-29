@@ -14,7 +14,8 @@ class App extends Component {
       districts: [ { location: '', stats: { 2006: 0 } } ],
       showAll: false,
       compared1: null,
-      compared2: null
+      compared2: null,
+      comparedAvg: 0
     }
   }
   
@@ -38,13 +39,21 @@ class App extends Component {
 
   compareDistrict = (district) => {
     const districtToCompare = this.districtRepository.findByName(district)
+    districtToCompare.districtAvg = 
+      this.districtRepository.findAverage(district)
     this.setCompareOne(districtToCompare)
     this.setCompareTwo(districtToCompare)
   }
 
   setCompareOne = (district) => {
-    if (!this.state.compared1) {
+    if (!this.state.compared1 && 
+      !this.state.compared2) {
       this.setState({ compared1: district })
+    } else if (!this.state.compared1 && this.state.compared2) {
+      this.setState({ 
+        compared1: district,
+        comparedAvg: this.districtRepository.compareDistrictAverages(district.location, this.state.compared2.location)
+      })
     } else if (this.state.compared1 && 
       this.state.compared1 === district) {
       this.setState({ compared1: null })
@@ -54,7 +63,13 @@ class App extends Component {
   setCompareTwo = (district) => {
     if (this.state.compared1 && !this.state.compared2 &&
       this.state.compared1 !== district) {
-      this.setState({ compared2: district })
+      this.setState({ 
+        compared2: district,
+        comparedAvg: this.districtRepository.compareDistrictAverages(this.state.compared1.location, district.location)
+      })
+    } else if (!this.state.compared1 &&
+      this.state.compared2 === district) {
+      this.setState({ compared2: null, compared1: null })
     } else if (this.state.compared2 &&
       this.state.compared2 === district) {
       this.setState({ compared2: null })
@@ -62,15 +77,7 @@ class App extends Component {
   }
 
   render() {
-    const { districts, showAll, compared1, compared2 } = this.state
-    let compare = <div></div>
-    if (this.state.compared1 || compared2) {
-      compare = <ComparisonContainer 
-        compared1={compared1}
-        compared2={compared2}
-        compareDistrict={this.compareDistrict}
-      />
-    }
+    const { districts, showAll, compared1, compared2, comparedAvg } = this.state
     return (
       <div className="App">
         <h1>Headcount 2.0</h1>
@@ -78,7 +85,12 @@ class App extends Component {
           handleInputUpdate={this.handleInputUpdate}
           toggleShowAll={this.toggleShowAll}
         />
-        {compare}
+        <ComparisonContainer 
+          compared1={compared1}
+          compared2={compared2}
+          comparedAvg={comparedAvg}
+          compareDistrict={this.compareDistrict}
+        />
         <DistrictContainer 
           districts={districts}
           showAll={showAll}
