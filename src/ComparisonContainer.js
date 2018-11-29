@@ -1,76 +1,45 @@
 import React from 'react'
 import District from './District'
+import ComparisonWindow from './ComparisonWindow'
 import './styles/ComparisonContainer.css'
 
 export default function ComparisonContainer({ compared1, compared2, comparedAvg, compareDistrict }) {
-  const compared1Component = 
-    <District 
-      districtData={compared1}
-      compareDistrict={compareDistrict}
-      selected={true}
-    />
-  const compared2Component = 
-    <District 
-      districtData={compared2}
-      compareDistrict={compareDistrict}
-      selected={true}
-    />
+  const comparisonPlaceholder = 
+    <div className='comparison-placeholder'>
+      Select a district to compare
+    </div>
 
-  if (compared1 && !compared2) {
-    return (
-      <section className='comparison-container'>
-        {compared1Component}
-        <div className='comparison-window'>
-          <h2>{compared1.location}: {compared1.districtAvg}</h2>
-          <p>has</p>
-          <h3>--</h3>
-          <p>times the average attendance of</p>
-        </div>
-        <div className='comparison-placeholder'>
-          Select a district to compare
-        </div>        
-      </section>
-    )
-  } else if (!compared1 && compared2) {
-    return (
-      <section className='comparison-container'>
-        <div className='comparison-placeholder'>
-          Select a district to compare
-        </div>
-        <div className='comparison-window'>
-          <p>has</p>
-          <h3>--</h3>
-          <p>times the average attendance of</p>
-          <h2>{compared2.location}: {compared2.districtAvg}</h2>
-        </div>
-        {compared2Component}
-      </section>
-    )
-  } else if (compared1 && compared2) {
-    return (
-      <section className='comparison-container'>
-        {compared1Component}
-        <div className='comparison-window'>
-          <h2>{compared1.location}: {compared1.districtAvg}</h2>
-          <p>has</p>
-          <h3>{comparedAvg.compared}</h3>
-          <p>times the average attendance of</p>
-          <h2>{compared2.location}: {compared2.districtAvg}</h2>
-        </div>
-        {compared2Component}
-      </section>
-    )
+  if (compared1) {
+    var compared1Component = 
+      <District 
+        districtData={compared1}
+        compareDistrict={compareDistrict}
+        selected={true}
+      />
   } else {
-    return (
-      <section className='comparison-container'>
-        <div className='comparison-placeholder'>
-          Select a district to compare
-        </div>
-        <div className='comparison-window none-selected'></div>
-        <div className='comparison-placeholder'>
-          Select a district to compare
-        </div>        
-      </section>
-    )
+    var compared1Component = comparisonPlaceholder
   }
+
+  if (compared2) {
+    var compared2Component = 
+      <District 
+        districtData={compared2}
+        compareDistrict={compareDistrict}
+        selected={true}
+      />
+  } else {
+    var compared2Component = comparisonPlaceholder
+  }
+
+  return (
+    <section className='comparison-container'>
+      {compared1Component}
+      <ComparisonWindow 
+        compared1={compared1}
+        compared2={compared2}
+        comparedAvg={comparedAvg}
+      />
+      {compared2Component}
+    </section>
+  )
 }

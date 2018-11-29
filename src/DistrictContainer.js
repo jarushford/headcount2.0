@@ -7,13 +7,14 @@ import  { uid } from 'react-uid'
 export default function DistrictContainer({ districts, showAll, compareDistrict,
 compared1, compared2 }) {
   if (!showAll) { districts = districts.slice().splice(0, 12) }
+  
   const districtArray = districts.map(district => {
-    if (compared1 !== null && district.location === compared1.location) {
+    if (compared1 && district.location === compared1.location) {
       return <District districtData={district} key={uid(district)}
         compareDistrict={compareDistrict}
         selected={true}
       />
-    } else if (compared2 !== null && district.location === compared2.location) {
+    } else if (compared2 && district.location === compared2.location) {
       return <District districtData={district} key={uid(district)}
         compareDistrict={compareDistrict}
         selected={true}

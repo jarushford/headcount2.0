@@ -15,7 +15,7 @@ class App extends Component {
       showAll: false,
       compared1: null,
       compared2: null,
-      comparedAvg: 0
+      comparedAvg: null
     }
   }
   

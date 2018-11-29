@@ -61,6 +61,6 @@ svg {
 }
 
 .selected {
-  border: 2px solid greenyellow;
+  border: 4px solid rgb(236, 217, 42);
   background: rgb(53, 53, 53);
 }
