@@ -1,8 +1,9 @@
 .comparison-container {
   margin: 40px;
   display: flex;
-  border-bottom: 4px solid rgb(46, 46, 46);
-  padding-bottom: 40px;
+  padding: 40px;
+  background: #3a7248ca;
+  border-radius: 10px;
 }
 
 .comparison-placeholder {
@@ -20,6 +21,7 @@
   color: white;
   text-align: center;
   padding: 15px;
+  background: #24502f;
 }
 
 .comparison-window {
