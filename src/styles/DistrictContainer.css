@@ -6,4 +6,5 @@
   padding-bottom: 50px;
   padding-top: 40px;
   border-top: 4px solid rgb(46, 46, 46);
+  box-sizing: border-box;
 }
