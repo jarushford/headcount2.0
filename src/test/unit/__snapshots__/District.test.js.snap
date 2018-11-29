@@ -1,9 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App should match the snapshot with all data passed in 1`] = `
+exports[`App should match the snapshot when selected 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <District
+    compareDistrict={[Function]}
     districtData={
         Object {
             "location": "Colorado",
@@ -12,6 +13,7 @@ ShallowWrapper {
             },
           }
     }
+    selected={false}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -59,7 +61,7 @@ ShallowWrapper {
           </li>
 </ul>,
       ],
-      "className": "district-card undefined",
+      "className": "district-card false",
       "onClick": [Function],
     },
     "ref": null,
@@ -272,7 +274,476 @@ ShallowWrapper {
             </li>
 </ul>,
         ],
-        "className": "district-card undefined",
+        "className": "district-card false",
+        "onClick": [Function],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Colorado",
+          },
+          "ref": null,
+          "rendered": "Colorado",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": "hr",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                2006
+                <svg
+                                height="30"
+                                width="150"
+                >
+                                <line
+                                                className="line-bg"
+                                                x1={0}
+                                                x2="145"
+                                                y1="0"
+                                                y2="0"
+                                />
+                                <line
+                                                className="line-accent red-accent"
+                                                x1="0"
+                                                x2={0}
+                                                y1="0"
+                                                y2="0"
+                                />
+                </svg>
+                <span
+                                className="data-span"
+                />
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "val-2006",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "2006",
+                  <svg
+                    height="30"
+                    width="150"
+>
+                    <line
+                                        className="line-bg"
+                                        x1={0}
+                                        x2="145"
+                                        y1="0"
+                                        y2="0"
+                    />
+                    <line
+                                        className="line-accent red-accent"
+                                        x1="0"
+                                        x2={0}
+                                        y1="0"
+                                        y2="0"
+                    />
+</svg>,
+                  <span
+                    className="data-span"
+/>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                "2006",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <line
+                        className="line-bg"
+                        x1={0}
+                        x2="145"
+                        y1="0"
+                        y2="0"
+/>,
+                      <line
+                        className="line-accent red-accent"
+                        x1="0"
+                        x2={0}
+                        y1="0"
+                        y2="0"
+/>,
+                    ],
+                    "height": "30",
+                    "width": "150",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "line-bg",
+                        "x1": 0,
+                        "x2": "145",
+                        "y1": "0",
+                        "y2": "0",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "line",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "className": "line-accent red-accent",
+                        "x1": "0",
+                        "x2": 0,
+                        "y1": "0",
+                        "y2": "0",
+                      },
+                      "ref": null,
+                      "rendered": null,
+                      "type": "line",
+                    },
+                  ],
+                  "type": "svg",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": 0,
+                    "className": "data-span",
+                  },
+                  "ref": null,
+                  "rendered": 0,
+                  "type": "span",
+                },
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`App should match the snapshot with all data passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <District
+    compareDistrict={[Function]}
+    districtData={
+        Object {
+            "location": "Colorado",
+            "stats": Object {
+              "2006": 0,
+            },
+          }
+    }
+    selected={false}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Colorado
+</h2>,
+        <hr />,
+        <ul>
+          <li>
+                    2006
+                    <svg
+                              height="30"
+                              width="150"
+                    >
+                              <line
+                                        className="line-bg"
+                                        x1={0}
+                                        x2="145"
+                                        y1="0"
+                                        y2="0"
+                              />
+                              <line
+                                        className="line-accent red-accent"
+                                        x1="0"
+                                        x2={0}
+                                        y1="0"
+                                        y2="0"
+                              />
+                    </svg>
+                    <span
+                              className="data-span"
+                    />
+          </li>
+</ul>,
+      ],
+      "className": "district-card false",
+      "onClick": [Function],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Colorado",
+        },
+        "ref": null,
+        "rendered": "Colorado",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": "hr",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              2006
+              <svg
+                            height="30"
+                            width="150"
+              >
+                            <line
+                                          className="line-bg"
+                                          x1={0}
+                                          x2="145"
+                                          y1="0"
+                                          y2="0"
+                            />
+                            <line
+                                          className="line-accent red-accent"
+                                          x1="0"
+                                          x2={0}
+                                          y1="0"
+                                          y2="0"
+                            />
+              </svg>
+              <span
+                            className="data-span"
+              />
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "val-2006",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "2006",
+                <svg
+                  height="30"
+                  width="150"
+>
+                  <line
+                                    className="line-bg"
+                                    x1={0}
+                                    x2="145"
+                                    y1="0"
+                                    y2="0"
+                  />
+                  <line
+                                    className="line-accent red-accent"
+                                    x1="0"
+                                    x2={0}
+                                    y1="0"
+                                    y2="0"
+                  />
+</svg>,
+                <span
+                  className="data-span"
+/>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "2006",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <line
+                      className="line-bg"
+                      x1={0}
+                      x2="145"
+                      y1="0"
+                      y2="0"
+/>,
+                    <line
+                      className="line-accent red-accent"
+                      x1="0"
+                      x2={0}
+                      y1="0"
+                      y2="0"
+/>,
+                  ],
+                  "height": "30",
+                  "width": "150",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "line-bg",
+                      "x1": 0,
+                      "x2": "145",
+                      "y1": "0",
+                      "y2": "0",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "line",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "className": "line-accent red-accent",
+                      "x1": "0",
+                      "x2": 0,
+                      "y1": "0",
+                      "y2": "0",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "line",
+                  },
+                ],
+                "type": "svg",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": 0,
+                  "className": "data-span",
+                },
+                "ref": null,
+                "rendered": 0,
+                "type": "span",
+              },
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Colorado
+</h2>,
+          <hr />,
+          <ul>
+            <li>
+                        2006
+                        <svg
+                                    height="30"
+                                    width="150"
+                        >
+                                    <line
+                                                className="line-bg"
+                                                x1={0}
+                                                x2="145"
+                                                y1="0"
+                                                y2="0"
+                                    />
+                                    <line
+                                                className="line-accent red-accent"
+                                                x1="0"
+                                                x2={0}
+                                                y1="0"
+                                                y2="0"
+                                    />
+                        </svg>
+                        <span
+                                    className="data-span"
+                        />
+            </li>
+</ul>,
+        ],
+        "className": "district-card false",
         "onClick": [Function],
       },
       "ref": null,

@@ -267,3 +267,425 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`App should match the snapshot with comparisons passed in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DistrictContainer
+    compared1={
+        Object {
+            "location": "Colorado",
+          }
+    }
+    districts={
+        Array [
+            Object {
+              "location": "Colorado",
+              "stats": Object {
+                "2006": 0,
+              },
+            },
+          ]
+    }
+    showAll={true}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <District
+          compareDistrict={undefined}
+          districtData={
+                    Object {
+                              "location": "Colorado",
+                              "stats": Object {
+                                "2006": 0,
+                              },
+                            }
+          }
+          selected={true}
+/>,
+      ],
+      "className": "district-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "uid1",
+        "nodeType": "function",
+        "props": Object {
+          "compareDistrict": undefined,
+          "districtData": Object {
+            "location": "Colorado",
+            "stats": Object {
+              "2006": 0,
+            },
+          },
+          "selected": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <District
+            compareDistrict={undefined}
+            districtData={
+                        Object {
+                                    "location": "Colorado",
+                                    "stats": Object {
+                                      "2006": 0,
+                                    },
+                                  }
+            }
+            selected={true}
+/>,
+        ],
+        "className": "district-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "uid1",
+          "nodeType": "function",
+          "props": Object {
+            "compareDistrict": undefined,
+            "districtData": Object {
+              "location": "Colorado",
+              "stats": Object {
+                "2006": 0,
+              },
+            },
+            "selected": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`App should match the snapshot with comparisons passed in 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DistrictContainer
+    compared2={
+        Object {
+            "location": "Colorado",
+          }
+    }
+    districts={
+        Array [
+            Object {
+              "location": "Colorado",
+              "stats": Object {
+                "2006": 0,
+              },
+            },
+          ]
+    }
+    showAll={true}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <District
+          compareDistrict={undefined}
+          districtData={
+                    Object {
+                              "location": "Colorado",
+                              "stats": Object {
+                                "2006": 0,
+                              },
+                            }
+          }
+          selected={true}
+/>,
+      ],
+      "className": "district-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "uid1",
+        "nodeType": "function",
+        "props": Object {
+          "compareDistrict": undefined,
+          "districtData": Object {
+            "location": "Colorado",
+            "stats": Object {
+              "2006": 0,
+            },
+          },
+          "selected": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <District
+            compareDistrict={undefined}
+            districtData={
+                        Object {
+                                    "location": "Colorado",
+                                    "stats": Object {
+                                      "2006": 0,
+                                    },
+                                  }
+            }
+            selected={true}
+/>,
+        ],
+        "className": "district-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "uid1",
+          "nodeType": "function",
+          "props": Object {
+            "compareDistrict": undefined,
+            "districtData": Object {
+              "location": "Colorado",
+              "stats": Object {
+                "2006": 0,
+              },
+            },
+            "selected": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`App should match the snapshot with comparisons passed in 3`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <DistrictContainer
+    compared1={
+        Object {
+            "location": "Colorado",
+          }
+    }
+    compared2={
+        Object {
+            "location": "APSEN",
+          }
+    }
+    districts={
+        Array [
+            Object {
+              "location": "Colorado",
+              "stats": Object {
+                "2006": 0,
+              },
+            },
+          ]
+    }
+    showAll={true}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <District
+          compareDistrict={undefined}
+          districtData={
+                    Object {
+                              "location": "Colorado",
+                              "stats": Object {
+                                "2006": 0,
+                              },
+                            }
+          }
+          selected={true}
+/>,
+      ],
+      "className": "district-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "uid1",
+        "nodeType": "function",
+        "props": Object {
+          "compareDistrict": undefined,
+          "districtData": Object {
+            "location": "Colorado",
+            "stats": Object {
+              "2006": 0,
+            },
+          },
+          "selected": true,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <District
+            compareDistrict={undefined}
+            districtData={
+                        Object {
+                                    "location": "Colorado",
+                                    "stats": Object {
+                                      "2006": 0,
+                                    },
+                                  }
+            }
+            selected={true}
+/>,
+        ],
+        "className": "district-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "uid1",
+          "nodeType": "function",
+          "props": Object {
+            "compareDistrict": undefined,
+            "districtData": Object {
+              "location": "Colorado",
+              "stats": Object {
+                "2006": 0,
+              },
+            },
+            "selected": true,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

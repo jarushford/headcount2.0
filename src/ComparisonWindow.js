@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function ComparisonWindow({ compared1, compared2, comparedAvg }) {
   return (
@@ -16,4 +17,10 @@ ComparisonWindow.defaultProps = {
   compared1: {location: '', stats: {}, districtAvg: ''},
   compared2: {location: '', stats: {}, districtAvg: ''},
   comparedAvg: {compared: '--'}
+}
+
+ComparisonWindow.propTypes = {
+  compared1: PropTypes.object,
+  compared2: PropTypes.object,
+  comparedAvg: PropTypes.object,
 }

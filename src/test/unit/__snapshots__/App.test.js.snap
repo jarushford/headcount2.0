@@ -27,14 +27,14 @@ ShallowWrapper {
 />,
         <ComparisonContainer
           compareDistrict={[Function]}
-          compared1={null}
-          compared2={null}
-          comparedAvg={null}
+          compared1={undefined}
+          compared2={undefined}
+          comparedAvg={undefined}
 />,
         <DistrictContainer
           compareDistrict={[Function]}
-          compared1={null}
-          compared2={null}
+          compared1={undefined}
+          compared2={undefined}
           districts={
                     Array [
                               Object {
@@ -2971,9 +2971,9 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "compareDistrict": [Function],
-          "compared1": null,
-          "compared2": null,
-          "comparedAvg": null,
+          "compared1": undefined,
+          "compared2": undefined,
+          "comparedAvg": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -2985,8 +2985,8 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "compareDistrict": [Function],
-          "compared1": null,
-          "compared2": null,
+          "compared1": undefined,
+          "compared2": undefined,
           "districts": Array [
             Object {
               "location": "COLORADO",
@@ -5910,14 +5910,14 @@ ShallowWrapper {
 />,
           <ComparisonContainer
             compareDistrict={[Function]}
-            compared1={null}
-            compared2={null}
-            comparedAvg={null}
+            compared1={undefined}
+            compared2={undefined}
+            comparedAvg={undefined}
 />,
           <DistrictContainer
             compareDistrict={[Function]}
-            compared1={null}
-            compared2={null}
+            compared1={undefined}
+            compared2={undefined}
             districts={
                         Array [
                                     Object {
@@ -8854,9 +8854,9 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "compareDistrict": [Function],
-            "compared1": null,
-            "compared2": null,
-            "comparedAvg": null,
+            "compared1": undefined,
+            "compared2": undefined,
+            "comparedAvg": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -8868,8 +8868,8 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "compareDistrict": [Function],
-            "compared1": null,
-            "compared2": null,
+            "compared1": undefined,
+            "compared2": undefined,
             "districts": Array [
               Object {
                 "location": "COLORADO",

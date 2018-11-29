@@ -1,0 +1,545 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Comparison Window should match the snapshot with or without data 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ComparisonWindow
+    compare1={
+        Object {
+            "districtAvg": 0.5,
+            "location": "Colorado",
+            "stats": Object {
+              "2006": 0.5,
+            },
+          }
+    }
+    compare2={
+        Object {
+            "districtAvg": 0.8,
+            "location": "ASPEN",
+            "stats": Object {
+              "2006": 0.8,
+            },
+          }
+    }
+    compared1={
+        Object {
+            "districtAvg": "",
+            "location": "",
+            "stats": Object {},
+          }
+    }
+    compared2={
+        Object {
+            "districtAvg": "",
+            "location": "",
+            "stats": Object {},
+          }
+    }
+    comparedAvg={
+        Object {
+            "ASPEN": 0.8,
+            "Colorado": 0.5,
+            "compared": 0.65,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          
+           -- 
+          
+</h2>,
+        <p>
+          has
+</p>,
+        <h3>
+          0.65
+</h3>,
+        <p>
+          times the average attendance of
+</p>,
+        <h2>
+          
+           -- 
+          
+</h2>,
+      ],
+      "className": "comparison-window",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "",
+            " -- ",
+            "",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "",
+          " -- ",
+          "",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "has",
+        },
+        "ref": null,
+        "rendered": "has",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 0.65,
+        },
+        "ref": null,
+        "rendered": 0.65,
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "times the average attendance of",
+        },
+        "ref": null,
+        "rendered": "times the average attendance of",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "",
+            " -- ",
+            "",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "",
+          " -- ",
+          "",
+        ],
+        "type": "h2",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            
+             -- 
+            
+</h2>,
+          <p>
+            has
+</p>,
+          <h3>
+            0.65
+</h3>,
+          <p>
+            times the average attendance of
+</p>,
+          <h2>
+            
+             -- 
+            
+</h2>,
+        ],
+        "className": "comparison-window",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "",
+              " -- ",
+              "",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "",
+            " -- ",
+            "",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "has",
+          },
+          "ref": null,
+          "rendered": "has",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 0.65,
+          },
+          "ref": null,
+          "rendered": 0.65,
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "times the average attendance of",
+          },
+          "ref": null,
+          "rendered": "times the average attendance of",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "",
+              " -- ",
+              "",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "",
+            " -- ",
+            "",
+          ],
+          "type": "h2",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Comparison Window should match the snapshot with or without data 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ComparisonWindow
+    compared1={
+        Object {
+            "districtAvg": "",
+            "location": "",
+            "stats": Object {},
+          }
+    }
+    compared2={
+        Object {
+            "districtAvg": "",
+            "location": "",
+            "stats": Object {},
+          }
+    }
+    comparedAvg={
+        Object {
+            "compared": "--",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          
+           -- 
+          
+</h2>,
+        <p>
+          has
+</p>,
+        <h3>
+          --
+</h3>,
+        <p>
+          times the average attendance of
+</p>,
+        <h2>
+          
+           -- 
+          
+</h2>,
+      ],
+      "className": "comparison-window",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "",
+            " -- ",
+            "",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "",
+          " -- ",
+          "",
+        ],
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "has",
+        },
+        "ref": null,
+        "rendered": "has",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "--",
+        },
+        "ref": null,
+        "rendered": "--",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "times the average attendance of",
+        },
+        "ref": null,
+        "rendered": "times the average attendance of",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "",
+            " -- ",
+            "",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "",
+          " -- ",
+          "",
+        ],
+        "type": "h2",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            
+             -- 
+            
+</h2>,
+          <p>
+            has
+</p>,
+          <h3>
+            --
+</h3>,
+          <p>
+            times the average attendance of
+</p>,
+          <h2>
+            
+             -- 
+            
+</h2>,
+        ],
+        "className": "comparison-window",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "",
+              " -- ",
+              "",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "",
+            " -- ",
+            "",
+          ],
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "has",
+          },
+          "ref": null,
+          "rendered": "has",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "--",
+          },
+          "ref": null,
+          "rendered": "--",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "times the average attendance of",
+          },
+          "ref": null,
+          "rendered": "times the average attendance of",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "",
+              " -- ",
+              "",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "",
+            " -- ",
+            "",
+          ],
+          "type": "h2",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

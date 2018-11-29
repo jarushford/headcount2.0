@@ -17,4 +17,18 @@ describe('App', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  it('should match the snapshot with comparisons passed in', () => {
+    const wrapper1 = shallow(<DistrictContainer districts={data}
+      showAll={true} compared1={{location: 'Colorado'}}/>)
+    expect(wrapper1).toMatchSnapshot()
+
+    const wrapper2 = shallow(<DistrictContainer districts={data}
+      showAll={true} compared2={{location: 'Colorado'}}/>)
+    expect(wrapper2).toMatchSnapshot()
+
+    const wrapper3 = shallow(<DistrictContainer districts={data}
+      showAll={true} compared1={{location: 'Colorado'}} compared2={{location: 'APSEN'}}/>)
+    expect(wrapper3).toMatchSnapshot()
+  })
+
 })
