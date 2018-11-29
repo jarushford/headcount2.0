@@ -21,9 +21,10 @@ h1 {
   background: url(http://www.fbcgallatin.org/wp-content/uploads/2016/10/chalkboard.jpg);
   background-position: center;
   background-size: cover;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: darken;
-  color: white;
+  color: rgb(236, 217, 42);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: center;
   align-items: center;

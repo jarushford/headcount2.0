@@ -25,7 +25,16 @@ ShallowWrapper {
           handleInputUpdate={[Function]}
           toggleShowAll={[Function]}
 />,
+        <ComparisonContainer
+          compareDistrict={[Function]}
+          compared1={null}
+          compared2={null}
+          comparedAvg={null}
+/>,
         <DistrictContainer
+          compareDistrict={[Function]}
+          compared1={null}
+          compared2={null}
           districts={
                     Array [
                               Object {
@@ -2961,6 +2970,23 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "compareDistrict": [Function],
+          "compared1": null,
+          "compared2": null,
+          "comparedAvg": null,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "compareDistrict": [Function],
+          "compared1": null,
+          "compared2": null,
           "districts": Array [
             Object {
               "location": "COLORADO",
@@ -5882,7 +5908,16 @@ ShallowWrapper {
             handleInputUpdate={[Function]}
             toggleShowAll={[Function]}
 />,
+          <ComparisonContainer
+            compareDistrict={[Function]}
+            compared1={null}
+            compared2={null}
+            comparedAvg={null}
+/>,
           <DistrictContainer
+            compareDistrict={[Function]}
+            compared1={null}
+            compared2={null}
             districts={
                         Array [
                                     Object {
@@ -8818,6 +8853,23 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "compareDistrict": [Function],
+            "compared1": null,
+            "compared2": null,
+            "comparedAvg": null,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "compareDistrict": [Function],
+            "compared1": null,
+            "compared2": null,
             "districts": Array [
               Object {
                 "location": "COLORADO",

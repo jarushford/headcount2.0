@@ -29,4 +29,11 @@ button {
   cursor: pointer;
   outline: none;
   margin-left: 50px;
+  transition: .3s;
+}
+
+button:hover {
+  background: rgb(236, 217, 42);
+  box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, 0.3);
+  transition: .3s;
 }

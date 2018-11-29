@@ -9,26 +9,29 @@ export default function ComparisonContainer({ compared1, compared2, comparedAvg,
       Select a district to compare
     </div>
 
+  var compared1Component
+  var compared2Component
+
   if (compared1) {
-    var compared1Component = 
+    compared1Component = 
       <District 
         districtData={compared1}
         compareDistrict={compareDistrict}
         selected={true}
       />
   } else {
-    var compared1Component = comparisonPlaceholder
+    compared1Component = comparisonPlaceholder
   }
 
   if (compared2) {
-    var compared2Component = 
+    compared2Component = 
       <District 
         districtData={compared2}
         compareDistrict={compareDistrict}
         selected={true}
       />
   } else {
-    var compared2Component = comparisonPlaceholder
+    compared2Component = comparisonPlaceholder
   }
 
   return (
@@ -43,3 +46,4 @@ export default function ComparisonContainer({ compared1, compared2, comparedAvg,
     </section>
   )
 }
+

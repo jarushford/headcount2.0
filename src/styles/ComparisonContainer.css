@@ -11,9 +11,9 @@
   border: 2px solid #333;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
   padding: 4px;
-  width: 310px;
+  width: 306px;
   margin: 0 auto;
-  height: 445px;
+  height: 448px;
   display: flex;
   align-items: center;
   font-size: 1.3rem;
@@ -31,7 +31,11 @@
   align-items: center;
   width: 20%;
   height: 400px;
-  background: rgb(46, 46, 46);
+  background: url(http://www.fbcgallatin.org/wp-content/uploads/2016/10/chalkboard.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: darken;
   border-radius: 3px;
   box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
   color: white;

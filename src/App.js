@@ -13,9 +13,9 @@ class App extends Component {
     this.state = {
       districts: [ { location: '', stats: { 2006: 0 } } ],
       showAll: false,
-      compared1: null,
-      compared2: null,
-      comparedAvg: null
+      compared1: undefined,
+      compared2: undefined,
+      comparedAvg: undefined
     }
   }
   
@@ -56,7 +56,7 @@ class App extends Component {
       })
     } else if (this.state.compared1 && 
       this.state.compared1 === district) {
-      this.setState({ compared1: null })
+      this.setState({ compared1: undefined, comparedAvg: undefined })
     }
   }
 
@@ -69,12 +69,13 @@ class App extends Component {
       })
     } else if (!this.state.compared1 &&
       this.state.compared2 === district) {
-      this.setState({ compared2: null, compared1: null })
+      this.setState({ compared2: undefined, compared1: undefined, comparedAvg: undefined })
     } else if (this.state.compared2 &&
       this.state.compared2 === district) {
-      this.setState({ compared2: null })
+      this.setState({ compared2: undefined, comparedAvg: undefined })
     }
   }
+
 
   render() {
     const { districts, showAll, compared1, compared2, comparedAvg } = this.state
