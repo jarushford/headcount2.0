@@ -7,11 +7,13 @@ export default function ComparisonContainer({ compared1, compared2, comparedAvg,
     <District 
       districtData={compared1}
       compareDistrict={compareDistrict}
+      selected={true}
     />
   const compared2Component = 
     <District 
       districtData={compared2}
       compareDistrict={compareDistrict}
+      selected={true}
     />
 
   if (compared1 && !compared2) {

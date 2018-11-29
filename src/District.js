@@ -3,7 +3,8 @@ import './styles/District.css'
 import PropTypes from 'prop-types'
 import { uid } from 'react-uid'
 
-export default function District({ districtData, compareDistrict }) {
+export default function District(props) {
+  const { districtData, compareDistrict } = props
   const { location, stats } = districtData
   const statsKeys = Object.keys(stats)
   const statsArray = statsKeys.map(year => {
@@ -19,13 +20,16 @@ export default function District({ districtData, compareDistrict }) {
   })
 
   return (
-    <div className='district-card' onClick={() => compareDistrict(location)} >
+    <div className={`district-card ${props.selected && 'selected'}`} onClick={() => {
+      compareDistrict(location)
+      }}>
       <h2>{location}</h2>
       <hr/>
       <ul>{statsArray}</ul>
     </div>
   )
 }
+
 
 District.propTypes = {
   districtData: PropTypes.object

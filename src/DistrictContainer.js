@@ -4,11 +4,26 @@ import './styles/DistrictContainer.css'
 import PropTypes from 'prop-types'
 import  { uid } from 'react-uid'
 
-export default function DistrictContainer({ districts, showAll, compareDistrict }) {
+export default function DistrictContainer({ districts, showAll, compareDistrict,
+compared1, compared2 }) {
   if (!showAll) { districts = districts.slice().splice(0, 12) }
   const districtArray = districts.map(district => {
-    return <District districtData={district} key={uid(district)}
-      compareDistrict={compareDistrict} />
+    if (compared1 !== null && district.location === compared1.location) {
+      return <District districtData={district} key={uid(district)}
+        compareDistrict={compareDistrict}
+        selected={true}
+      />
+    } else if (compared2 !== null && district.location === compared2.location) {
+      return <District districtData={district} key={uid(district)}
+        compareDistrict={compareDistrict}
+        selected={true}
+      />
+    } else {
+      return <District districtData={district} key={uid(district)}
+        compareDistrict={compareDistrict}
+        selected={false}
+      />
+    }
   })
 
   return (

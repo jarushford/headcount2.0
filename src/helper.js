@@ -8,7 +8,7 @@ export default class DistrictRepository {
       if (!dataObj[district.Location]) {
         dataObj[district.Location] = { 
           location: district.Location.toUpperCase(), 
-          stats: {} 
+          stats: {}
         }
       }
 

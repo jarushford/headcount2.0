@@ -94,6 +94,8 @@ class App extends Component {
         <DistrictContainer 
           districts={districts}
           showAll={showAll}
+          compared1={compared1}
+          compared2={compared2}
           compareDistrict={this.compareDistrict}
         />
       </div>
