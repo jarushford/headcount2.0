@@ -70,7 +70,8 @@ ShallowWrapper {
           0.65
 </h3>,
         <p>
-          times the average attendance of
+          times the average 
+           of
 </p>,
         <h2>
           
@@ -128,10 +129,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "times the average attendance of",
+          "children": Array [
+            "times the average ",
+            undefined,
+            " of",
+          ],
         },
         "ref": null,
-        "rendered": "times the average attendance of",
+        "rendered": Array [
+          "times the average ",
+          undefined,
+          " of",
+        ],
         "type": "p",
       },
       Object {
@@ -175,7 +184,8 @@ ShallowWrapper {
             0.65
 </h3>,
           <p>
-            times the average attendance of
+            times the average 
+             of
 </p>,
           <h2>
             
@@ -233,10 +243,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "times the average attendance of",
+            "children": Array [
+              "times the average ",
+              undefined,
+              " of",
+            ],
           },
           "ref": null,
-          "rendered": "times the average attendance of",
+          "rendered": Array [
+            "times the average ",
+            undefined,
+            " of",
+          ],
           "type": "p",
         },
         Object {
@@ -332,7 +350,8 @@ ShallowWrapper {
           --
 </h3>,
         <p>
-          times the average attendance of
+          times the average 
+           of
 </p>,
         <h2>
           
@@ -390,10 +409,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "times the average attendance of",
+          "children": Array [
+            "times the average ",
+            undefined,
+            " of",
+          ],
         },
         "ref": null,
-        "rendered": "times the average attendance of",
+        "rendered": Array [
+          "times the average ",
+          undefined,
+          " of",
+        ],
         "type": "p",
       },
       Object {
@@ -437,7 +464,8 @@ ShallowWrapper {
             --
 </h3>,
           <p>
-            times the average attendance of
+            times the average 
+             of
 </p>,
           <h2>
             
@@ -495,10 +523,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "times the average attendance of",
+            "children": Array [
+              "times the average ",
+              undefined,
+              " of",
+            ],
           },
           "ref": null,
-          "rendered": "times the average attendance of",
+          "rendered": Array [
+            "times the average ",
+            undefined,
+            " of",
+          ],
           "type": "p",
         },
         Object {

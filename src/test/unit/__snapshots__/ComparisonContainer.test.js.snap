@@ -84,6 +84,7 @@ ShallowWrapper {
                               "comparedd": 0.65,
                             }
           }
+          currentData={undefined}
 />,
         <District
           compareDistrict={undefined}
@@ -146,6 +147,7 @@ ShallowWrapper {
             "Colorado": 0.5,
             "comparedd": 0.65,
           },
+          "currentData": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -219,6 +221,7 @@ ShallowWrapper {
                                     "comparedd": 0.65,
                                   }
             }
+            currentData={undefined}
 />,
           <District
             compareDistrict={undefined}
@@ -281,6 +284,7 @@ ShallowWrapper {
               "Colorado": 0.5,
               "comparedd": 0.65,
             },
+            "currentData": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -374,6 +378,7 @@ ShallowWrapper {
                               "compared": "--",
                             }
           }
+          currentData={undefined}
 />,
         <div
           className="comparison-placeholder"
@@ -415,6 +420,7 @@ ShallowWrapper {
           "comparedAvg": Object {
             "compared": "--",
           },
+          "currentData": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -467,6 +473,7 @@ ShallowWrapper {
                                     "compared": "--",
                                   }
             }
+            currentData={undefined}
 />,
           <div
             className="comparison-placeholder"
@@ -508,6 +515,7 @@ ShallowWrapper {
             "comparedAvg": Object {
               "compared": "--",
             },
+            "currentData": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -623,6 +631,7 @@ ShallowWrapper {
                               "comparedd": 0.65,
                             }
           }
+          currentData={undefined}
 />,
         <div
           className="comparison-placeholder"
@@ -675,6 +684,7 @@ ShallowWrapper {
             "Colorado": 0.5,
             "comparedd": 0.65,
           },
+          "currentData": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -739,6 +749,7 @@ ShallowWrapper {
                                     "comparedd": 0.65,
                                   }
             }
+            currentData={undefined}
 />,
           <div
             className="comparison-placeholder"
@@ -791,6 +802,7 @@ ShallowWrapper {
               "Colorado": 0.5,
               "comparedd": 0.65,
             },
+            "currentData": undefined,
           },
           "ref": null,
           "rendered": null,
@@ -898,6 +910,7 @@ ShallowWrapper {
                               "comparedd": 0.65,
                             }
           }
+          currentData={undefined}
 />,
         <District
           compareDistrict={[Function]}
@@ -951,6 +964,7 @@ ShallowWrapper {
             "Colorado": 0.5,
             "comparedd": 0.65,
           },
+          "currentData": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -1014,6 +1028,7 @@ ShallowWrapper {
                                     "comparedd": 0.65,
                                   }
             }
+            currentData={undefined}
 />,
           <District
             compareDistrict={[Function]}
@@ -1067,6 +1082,7 @@ ShallowWrapper {
               "Colorado": 0.5,
               "comparedd": 0.65,
             },
+            "currentData": undefined,
           },
           "ref": null,
           "rendered": null,

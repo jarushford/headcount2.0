@@ -21,15 +21,17 @@ ShallowWrapper {
         <h1>
           Headcount 2.0
 </h1>,
-        <SearchForm
-          handleInputUpdate={[Function]}
-          toggleShowAll={[Function]}
-/>,
         <ComparisonContainer
           compareDistrict={[Function]}
           compared1={undefined}
           compared2={undefined}
           comparedAvg={undefined}
+          currentData="kinderData"
+/>,
+        <SearchForm
+          handleInputUpdate={[Function]}
+          selectData={[Function]}
+          toggleShowAll={[Function]}
 />,
         <DistrictContainer
           compareDistrict={[Function]}
@@ -2958,8 +2960,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleInputUpdate": [Function],
-          "toggleShowAll": [Function],
+          "compareDistrict": [Function],
+          "compared1": undefined,
+          "compared2": undefined,
+          "comparedAvg": undefined,
+          "currentData": "kinderData",
         },
         "ref": null,
         "rendered": null,
@@ -2970,10 +2975,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "compareDistrict": [Function],
-          "compared1": undefined,
-          "compared2": undefined,
-          "comparedAvg": undefined,
+          "handleInputUpdate": [Function],
+          "selectData": [Function],
+          "toggleShowAll": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -5904,15 +5908,17 @@ ShallowWrapper {
           <h1>
             Headcount 2.0
 </h1>,
-          <SearchForm
-            handleInputUpdate={[Function]}
-            toggleShowAll={[Function]}
-/>,
           <ComparisonContainer
             compareDistrict={[Function]}
             compared1={undefined}
             compared2={undefined}
             comparedAvg={undefined}
+            currentData="kinderData"
+/>,
+          <SearchForm
+            handleInputUpdate={[Function]}
+            selectData={[Function]}
+            toggleShowAll={[Function]}
 />,
           <DistrictContainer
             compareDistrict={[Function]}
@@ -8841,8 +8847,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleInputUpdate": [Function],
-            "toggleShowAll": [Function],
+            "compareDistrict": [Function],
+            "compared1": undefined,
+            "compared2": undefined,
+            "comparedAvg": undefined,
+            "currentData": "kinderData",
           },
           "ref": null,
           "rendered": null,
@@ -8853,10 +8862,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "compareDistrict": [Function],
-            "compared1": undefined,
-            "compared2": undefined,
-            "comparedAvg": undefined,
+            "handleInputUpdate": [Function],
+            "selectData": [Function],
+            "toggleShowAll": [Function],
           },
           "ref": null,
           "rendered": null,
