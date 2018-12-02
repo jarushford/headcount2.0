@@ -8,3 +8,7 @@
   border-top: 4px solid rgb(46, 46, 46);
   box-sizing: border-box;
 }
+
+@media screen and (max-width: 600px) {
+  .district-container { margin: 40px auto 0 auto }
+}

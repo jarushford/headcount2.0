@@ -1,43 +1,49 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import District from './District'
 import ComparisonWindow from './ComparisonWindow'
 import './styles/ComparisonContainer.css'
 
-export default function ComparisonContainer({ compared1, compared2, comparedAvg, compareDistrict, currentData }) {
-  const comparisonPlaceholder = 
-    <div className='comparison-placeholder'>
+export default function ComparisonContainer({
+  compared1, compared2, comparedAvg, compareDistrict, currentData
+}) {
+  const comparisonPlaceholder = (
+    <div className="comparison-placeholder">
       Select a district to compare
     </div>
+  )
 
-  var compared1Component
-  var compared2Component
+  let compared1Component
+  let compared2Component
 
   if (compared1) {
-    compared1Component = 
-      <District 
+    compared1Component = (
+      <District
         districtData={compared1}
         compareDistrict={compareDistrict}
-        selected={true}
+        selected
       />
+    )
   } else {
     compared1Component = comparisonPlaceholder
   }
 
   if (compared2) {
-    compared2Component = 
-      <District 
+    compared2Component = (
+      <District
         districtData={compared2}
         compareDistrict={compareDistrict}
-        selected={true}
+        selected
       />
+    )
   } else {
     compared2Component = comparisonPlaceholder
   }
 
   return (
-    <section className='comparison-container'>
+    <section className="comparison-container">
       {compared1Component}
-      <ComparisonWindow 
+      <ComparisonWindow
         compared1={compared1}
         compared2={compared2}
         comparedAvg={comparedAvg}
@@ -48,3 +54,16 @@ export default function ComparisonContainer({ compared1, compared2, comparedAvg,
   )
 }
 
+ComparisonContainer.propTypes = {
+  compared1: PropTypes.shape({ location: '', stats: { 2006: 0 } }),
+  compared2: PropTypes.shape({ location: '', stats: { 2006: 0 } }),
+  comparedAvg: PropTypes.shape({ Location: 0, Location2: 0, compared: 0 }),
+  currentData: PropTypes.string.isRequired,
+  compareDistrict: PropTypes.func.isRequired
+}
+
+ComparisonContainer.defaultProps = {
+  compared1: undefined,
+  compared2: undefined,
+  comparedAvg: undefined
+}

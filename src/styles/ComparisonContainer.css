@@ -65,3 +65,27 @@
   text-align: center;
   margin-left: 0;
 }
+
+@media screen and (max-width: 950px) {
+  .comparison-window {
+    width: 40%;    
+    margin-bottom: 20px;
+  }
+
+  .comparison-container {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .comparison-window {
+    width: 60%;
+  }
+
+  .comparison-container {
+    margin: 40px auto;
+    padding: 40px 0;
+  }
+}
