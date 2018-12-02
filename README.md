@@ -9,17 +9,25 @@ The goal of this project was to use a series of provided data sets to create an 
 
 ### Set Up
 
-`git clone https://github.com/jarushford/headcount2.0.git`
+```
+git clone https://github.com/jarushford/headcount2.0.git
 
-`cd headcount2.0`
+cd headcount2.0
 
-`npm install`
+npm install
 
-Run `npm start` and visit localhost:3000 in your browser
+Run npm start and visit localhost:3000 in your browser
+```
+
+#### Select Districts to Compare Averages
 
 [![Image from Gyazo](https://i.gyazo.com/05811d01ea34a7c8e740d768e6a907f0.gif)](https://gyazo.com/05811d01ea34a7c8e740d768e6a907f0)
 
+#### Search for a Specific District
+
 [![Image from Gyazo](https://i.gyazo.com/3846b640ccc13fb7b0f196b2ed38413e.gif)](https://gyazo.com/3846b640ccc13fb7b0f196b2ed38413e)
+
+#### Compare Based on Different Statistics
 
 [![Image from Gyazo](https://i.gyazo.com/6c88f938d91c512ca5a396e5b3abd16c.gif)](https://gyazo.com/6c88f938d91c512ca5a396e5b3abd16c)
 
