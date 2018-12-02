@@ -4,6 +4,13 @@ import DistrictRepository from './helper'
 import SearchForm from './SearchForm'
 import ComparisonContainer from './ComparisonContainer';
 import kinderData from './data/kindergartners_in_full_day_program'
+import onlineData from './data/online_pupil_enrollment'
+import gradData from './data/high_school_graduation_rates'
+import incomeData from './data/median_household_income'
+import enrollmentData from './data/pupil_enrollment'
+import remediationData from './data/remediation_in_higher_education'
+import povertyData from './data/school_aged_children_in_poverty'
+
 import './styles/App.css'
 
 class App extends Component {
@@ -11,6 +18,16 @@ class App extends Component {
     super()
     this.districtRepository = new DistrictRepository(kinderData);
     this.state = {
+      dataOptions: {
+        'kinderData': kinderData,
+        'onlineData': onlineData,
+        'gradData': gradData,
+        'incomeData': incomeData,
+        'enrollmentData': enrollmentData,
+        'remediationData': remediationData,
+        'povertyData': povertyData
+      },
+      currentData: 'kinderData',
       districts: [ { location: '', stats: { 2006: 0 } } ],
       showAll: false,
       compared1: undefined,
@@ -76,21 +93,35 @@ class App extends Component {
     }
   }
 
+  selectData = (dataSet) => {
+    this.districtRepository = 
+      new DistrictRepository(this.state.dataOptions[dataSet])
+    this.setState({
+      compared1: undefined,
+      compared2: undefined,
+      comparedAvg: undefined,
+      districts: this.districtRepository.findAllMatches(this.state.searchInput),
+      currentData: dataSet
+    })
+  }
+
 
   render() {
     const { districts, showAll, compared1, compared2, comparedAvg } = this.state
     return (
       <div className="App">
         <h1>Headcount 2.0</h1>
-        <SearchForm 
-          handleInputUpdate={this.handleInputUpdate}
-          toggleShowAll={this.toggleShowAll}
-        />
         <ComparisonContainer 
           compared1={compared1}
           compared2={compared2}
           comparedAvg={comparedAvg}
           compareDistrict={this.compareDistrict}
+          currentData={this.state.currentData}
+        />
+        <SearchForm 
+          handleInputUpdate={this.handleInputUpdate}
+          toggleShowAll={this.toggleShowAll}
+          selectData={this.selectData}
         />
         <DistrictContainer 
           districts={districts}

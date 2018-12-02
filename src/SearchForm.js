@@ -1,9 +1,18 @@
 import React from 'react'
 import './styles/SearchForm.css'
 
-export default function SearchForm({ handleInputUpdate, toggleShowAll }) {
+export default function SearchForm({ handleInputUpdate, toggleShowAll, selectData }) {
     return (
       <div className="searchForm">
+        <select onChange={(e) => selectData(e.target.value)}>
+          <option value='kinderData'>Kindergarten Attendance</option>
+          <option value='onlineData'>Online Enrollment</option>
+          <option value='gradData'>High School Graduation</option>
+          <option value='incomeData'>Median Income</option>
+          <option value='enrollmentData'>Pupil Enrollment</option>
+          <option value='remediationData'>Remediation in Higher Education</option>
+          <option value='povertyData'>School Children in Poverty</option>
+        </select>
         <input onChange={handleInputUpdate}
           placeholder='Search for a district...'/>
         <button className='show-all'

@@ -3,7 +3,7 @@ import District from './District'
 import ComparisonWindow from './ComparisonWindow'
 import './styles/ComparisonContainer.css'
 
-export default function ComparisonContainer({ compared1, compared2, comparedAvg, compareDistrict }) {
+export default function ComparisonContainer({ compared1, compared2, comparedAvg, compareDistrict, currentData }) {
   const comparisonPlaceholder = 
     <div className='comparison-placeholder'>
       Select a district to compare
@@ -41,6 +41,7 @@ export default function ComparisonContainer({ compared1, compared2, comparedAvg,
         compared1={compared1}
         compared2={compared2}
         comparedAvg={comparedAvg}
+        currentData={currentData}
       />
       {compared2Component}
     </section>
