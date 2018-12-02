@@ -17,9 +17,9 @@ The goal of this project was to use a series of provided data sets to create an 
 
 Run `npm start` and visit localhost:3000 in your browser
 
-[![Image from Gyazo](https://i.gyazo.com/8756fb4eecb5f42ffe3ab2b7e098232c.gif)](https://gyazo.com/8756fb4eecb5f42ffe3ab2b7e098232c)
-
 [![Image from Gyazo](https://i.gyazo.com/05811d01ea34a7c8e740d768e6a907f0.gif)](https://gyazo.com/05811d01ea34a7c8e740d768e6a907f0)
+
+[![Image from Gyazo](https://i.gyazo.com/3846b640ccc13fb7b0f196b2ed38413e.gif)](https://gyazo.com/3846b640ccc13fb7b0f196b2ed38413e)
 
 [![Image from Gyazo](https://i.gyazo.com/6c88f938d91c512ca5a396e5b3abd16c.gif)](https://gyazo.com/6c88f938d91c512ca5a396e5b3abd16c)
 
