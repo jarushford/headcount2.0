@@ -36,7 +36,7 @@ export default function District(props) {
 
 
 District.propTypes = {
-  districtData: PropTypes.shape({ location: '', stats: { 2005: 0 } }).isRequired,
+  districtData: PropTypes.shape({ location: '', stats: PropTypes.shape({ 2005: 0 }) }).isRequired,
   compareDistrict: PropTypes.func.isRequired,
   selected: PropTypes.bool.isRequired
 }

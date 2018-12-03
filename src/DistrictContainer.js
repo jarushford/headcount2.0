@@ -8,42 +8,20 @@ export default function DistrictContainer({
   districts, showAll, compareDistrict,
   compared1, compared2
 }) {
-  let districtsToMap
+  let districtsToMap = districts
+  
   if (!showAll) {
     districtsToMap = districts.slice().splice(0, 12)
-  } else {
-    districtsToMap = districts
   }
 
   const districtArray = districtsToMap.map((district) => {
-    let districtToReturn = (
-      <District
-        districtData={district}
-        key={uid(district)}
-        compareDistrict={compareDistrict}
-        selected={false}
-      />
-    )
     if (compared1 && district.location === compared1.location) {
-      districtToReturn = (
-        <District
-          districtData={district}
-          key={uid(district)}
-          compareDistrict={compareDistrict}
-          selected
-        />
-      )
+      return buildDistrict(district, compareDistrict, true)
     } else if (compared2 && district.location === compared2.location) {
-      districtToReturn = (
-        <District
-          districtData={district}
-          key={uid(district)}
-          compareDistrict={compareDistrict}
-          selected
-        />
-      )
+      return buildDistrict(district, compareDistrict, true)
+    } else {
+      return buildDistrict(district, compareDistrict, false)
     }
-    return districtToReturn
   })
 
   return (
@@ -53,12 +31,27 @@ export default function DistrictContainer({
   )
 }
 
+/****************
+ PRIVATE
+****************/
+const buildDistrict = (district, compareDistrict, selected) => {
+  return (
+    <District
+      districtData={district}
+      key={uid(district)}
+      compareDistrict={compareDistrict}
+      selected={selected}
+    />
+  )
+}
+
+
 DistrictContainer.propTypes = {
   districts: PropTypes.arrayOf(PropTypes.object).isRequired,
-  showAll: PropTypes.func.isRequired,
+  showAll: PropTypes.bool.isRequired,
   compareDistrict: PropTypes.func.isRequired,
-  compared1: PropTypes.shape({ location: '', stats: { 2006: 0 } }),
-  compared2: PropTypes.shape({ location: '', stats: { 2006: 0 } })
+  compared1: PropTypes.shape({ location: '', stats: PropTypes.shape({ 2006: 0 }) }),
+  compared2: PropTypes.shape({ location: '', stats: PropTypes.shape({ 2006: 0 }) })
 }
 
 DistrictContainer.defaultProps = {

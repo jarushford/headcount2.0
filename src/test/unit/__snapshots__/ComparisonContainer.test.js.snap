@@ -337,6 +337,9 @@ exports[`Comparison Container should match the snapshot with or without data 2`]
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ComparisonContainer
+    compared1={undefined}
+    compared2={undefined}
+    comparedAvg={undefined}
     comparedDistrict={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {

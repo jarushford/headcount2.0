@@ -27,7 +27,7 @@ class App extends Component {
         povertyData
       },
       currentData: 'kinderData',
-      districts: [{ location: '', stats: { 2006: 0 } }],
+      districts: [],
       showAll: false,
       compared1: undefined,
       compared2: undefined,
@@ -114,6 +114,11 @@ class App extends Component {
     const {
       districts, showAll, compared1, compared2, comparedAvg, currentData
     } = this.state
+
+    if (districts.length === 0) {
+      return <h1>Loading...</h1>
+    }
+
     return (
       <div className="App">
         <h1>Headcount 2.0</h1>

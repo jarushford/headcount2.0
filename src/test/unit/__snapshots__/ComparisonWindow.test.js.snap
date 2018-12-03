@@ -64,14 +64,14 @@ ShallowWrapper {
           
 </h2>,
         <p>
-          has
+           has 
 </p>,
         <h3>
           0.65
 </h3>,
         <p>
           times the average 
-           of
+          of
 </p>,
         <h2>
           
@@ -107,10 +107,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "has",
+          "children": " has ",
         },
         "ref": null,
-        "rendered": "has",
+        "rendered": " has ",
         "type": "p",
       },
       Object {
@@ -132,14 +132,14 @@ ShallowWrapper {
           "children": Array [
             "times the average ",
             undefined,
-            " of",
+            "of",
           ],
         },
         "ref": null,
         "rendered": Array [
           "times the average ",
           undefined,
-          " of",
+          "of",
         ],
         "type": "p",
       },
@@ -178,14 +178,14 @@ ShallowWrapper {
             
 </h2>,
           <p>
-            has
+             has 
 </p>,
           <h3>
             0.65
 </h3>,
           <p>
             times the average 
-             of
+            of
 </p>,
           <h2>
             
@@ -221,10 +221,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "has",
+            "children": " has ",
           },
           "ref": null,
-          "rendered": "has",
+          "rendered": " has ",
           "type": "p",
         },
         Object {
@@ -246,14 +246,14 @@ ShallowWrapper {
             "children": Array [
               "times the average ",
               undefined,
-              " of",
+              "of",
             ],
           },
           "ref": null,
           "rendered": Array [
             "times the average ",
             undefined,
-            " of",
+            "of",
           ],
           "type": "p",
         },
@@ -344,14 +344,14 @@ ShallowWrapper {
           
 </h2>,
         <p>
-          has
+           has 
 </p>,
         <h3>
           --
 </h3>,
         <p>
           times the average 
-           of
+          of
 </p>,
         <h2>
           
@@ -387,10 +387,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "has",
+          "children": " has ",
         },
         "ref": null,
-        "rendered": "has",
+        "rendered": " has ",
         "type": "p",
       },
       Object {
@@ -412,14 +412,14 @@ ShallowWrapper {
           "children": Array [
             "times the average ",
             undefined,
-            " of",
+            "of",
           ],
         },
         "ref": null,
         "rendered": Array [
           "times the average ",
           undefined,
-          " of",
+          "of",
         ],
         "type": "p",
       },
@@ -458,14 +458,14 @@ ShallowWrapper {
             
 </h2>,
           <p>
-            has
+             has 
 </p>,
           <h3>
             --
 </h3>,
           <p>
             times the average 
-             of
+            of
 </p>,
           <h2>
             
@@ -501,10 +501,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "has",
+            "children": " has ",
           },
           "ref": null,
-          "rendered": "has",
+          "rendered": " has ",
           "type": "p",
         },
         Object {
@@ -526,14 +526,14 @@ ShallowWrapper {
             "children": Array [
               "times the average ",
               undefined,
-              " of",
+              "of",
             ],
           },
           "ref": null,
           "rendered": Array [
             "times the average ",
             undefined,
-            " of",
+            "of",
           ],
           "type": "p",
         },

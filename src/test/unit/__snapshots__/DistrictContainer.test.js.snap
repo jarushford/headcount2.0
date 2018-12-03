@@ -4,6 +4,8 @@ exports[`App should match the snapshot with all data passed in for showAll 1`] =
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DistrictContainer
+    compared1={undefined}
+    compared2={undefined}
     districts={
         Array [
             Object {
@@ -138,6 +140,8 @@ exports[`App should match the snapshot with all data passed in for showLess 1`] 
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DistrictContainer
+    compared1={undefined}
+    compared2={undefined}
     districts={
         Array [
             Object {
@@ -277,6 +281,7 @@ ShallowWrapper {
             "location": "Colorado",
           }
     }
+    compared2={undefined}
     districts={
         Array [
             Object {
@@ -411,6 +416,7 @@ exports[`App should match the snapshot with comparisons passed in 2`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DistrictContainer
+    compared1={undefined}
     compared2={
         Object {
             "location": "Colorado",

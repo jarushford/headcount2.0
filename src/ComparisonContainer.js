@@ -55,8 +55,8 @@ export default function ComparisonContainer({
 }
 
 ComparisonContainer.propTypes = {
-  compared1: PropTypes.shape({ location: '', stats: { 2006: 0 } }),
-  compared2: PropTypes.shape({ location: '', stats: { 2006: 0 } }),
+  compared1: PropTypes.shape({ location: '', stats: PropTypes.shape({ 2006: 0 }) }),
+  compared2: PropTypes.shape({ location: '', stats: PropTypes.shape({ 2006: 0 }) }),
   comparedAvg: PropTypes.shape({ Location: 0, Location2: 0, compared: 0 }),
   currentData: PropTypes.string.isRequired,
   compareDistrict: PropTypes.func.isRequired
