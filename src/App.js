@@ -27,11 +27,12 @@ class App extends Component {
         povertyData
       },
       currentData: 'kinderData',
-      districts: [],
+      districts: null,
       showAll: false,
       compared1: undefined,
       compared2: undefined,
-      comparedAvg: undefined
+      comparedAvg: undefined,
+      searchInput: ''
     }
   }
 
@@ -44,7 +45,8 @@ class App extends Component {
 
   handleInputUpdate = (e) => {
     this.setState({
-      districts: this.districtRepository.findAllMatches(e.target.value)
+      districts: this.districtRepository.findAllMatches(e.target.value),
+      searchInput: e.target.value
     })
   }
 
@@ -112,10 +114,10 @@ class App extends Component {
 
   render() {
     const {
-      districts, showAll, compared1, compared2, comparedAvg, currentData
+      districts, showAll, compared1, compared2, comparedAvg, currentData, searchInput
     } = this.state
 
-    if (districts.length === 0) {
+    if (districts === null) {
       return <h1>Loading...</h1>
     }
 
@@ -133,6 +135,7 @@ class App extends Component {
           handleInputUpdate={this.handleInputUpdate}
           toggleShowAll={this.toggleShowAll}
           selectData={this.selectData}
+          searchInput={searchInput}
         />
         <DistrictContainer
           districts={districts}

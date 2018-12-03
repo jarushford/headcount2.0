@@ -13,6 +13,8 @@
   width: 340px;
   margin: 0 auto;
   cursor: pointer;
+  transition: .3s ease;
+  position: relative;
 }
 
 hr {
@@ -65,6 +67,24 @@ svg {
   font-size: .8rem;
 }
 
-.selected {
+.selected,
+.district-card:hover {
   border: 3px solid rgb(236, 217, 42);
+  transition: .4s ease;
+}
+
+.selected::before {
+  content: 'X';
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: white;
+  font-size: 2rem;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+.selected:hover::before {
+  opacity: 1;
+  transition: .3s ease;
 }

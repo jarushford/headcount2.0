@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import './styles/SearchForm.css'
 
-export default function SearchForm({ handleInputUpdate, toggleShowAll, selectData }) {
+export default function SearchForm({ handleInputUpdate, toggleShowAll, selectData, searchInput }) {
   return (
     <div className="searchForm">
       <select onChange={e => selectData(e.target.value)}>
@@ -20,7 +20,7 @@ export default function SearchForm({ handleInputUpdate, toggleShowAll, selectDat
       />
       <button
         type="submit"
-        className="show-all"
+        className={`show-all ${searchInput && 'hide-button'}`}
         onClick={(e) => {
           toggleShowAll(e)
           if (e.target.innerText === 'Show All') {

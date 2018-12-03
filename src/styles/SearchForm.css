@@ -46,6 +46,12 @@ select {
   font-family: monospace;
 }
 
+.hide-button {
+  opacity: 0;
+  transition: .3 ease;
+  cursor: default;
+}
+
 @media screen and (max-width: 1050px) {
   .searchForm {
     width: 90%;
